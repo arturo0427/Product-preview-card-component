@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
 
@@ -15,9 +15,11 @@
 <body>
   <main class="card">
     <article class="card__content">
-      <div class="card__content__header">
-        <img src="images/image-product-mobile.jpg" alt="Product">
-      </div>
+      
+      <picture class="card__content__header">
+        <source media="(min-width: 894px)" srcset="images/image-product-desktop.jpg">
+        <img src="./images/image-product-mobile.jpg" alt="Product">
+      </picture>
 
       <div class="card__content__body">
         <span>Perfume</span>
@@ -32,19 +34,21 @@
         </div>
         <div class="card__content__body__price">
           <h2>$149.99</h2>
-          <span>$169.99</span>
+          <del>$169.99</del>
         </div>
-        <div class="card__content__body__button">
-          <img src="images/icon-cart.svg" alt="Icon cart">
-          <p>Add to Cart</p>
-        </div>
+
+        <button type="submit" class="card__content__body__button"><img alt aria-hidden="true" src="images/icon-cart.svg"
+            alt="Icon cart">Add to Cart</button>
+
+
+
       </div>
     </article>
   </main>
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://www.frontendmentor.io/profile/arturo0427" target="_blank">Arturo Muñoz</a>.
-  </div>
+  </footer>
 </body>
 
 </html>

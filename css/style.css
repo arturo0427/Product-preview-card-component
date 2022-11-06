@@ -73,7 +73,7 @@ body {
 
 .card__content__body__price {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     margin-bottom: 15px;
 }
 
@@ -84,17 +84,22 @@ body {
     flex-grow: 0.2;
 }
 
-.card__content__body__price span {
+.card__content__body__price del {
     flex-grow: 1;
-    text-decoration: line-through;
+    color: var(--Darkgrayishblue);
+    font-size: 0.7em;
+    /* text-decoration: line-through; */
     letter-spacing: 1px;
 
 }
 
 .card__content__body__button {
+    color: var(--White);
+    font-weight: 700;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: none;
     background-color: var(--Darkcyan);
     height: 45px;
     border-radius: 8px;
@@ -111,11 +116,6 @@ body {
     margin-right: 15px;
 }
 
-.card__content__body__button p {
-    color: var(--White);
-    font-size: 0.8em;
-    font-weight: 700;
-}
 
 .attribution {
     font-size: 11px;
